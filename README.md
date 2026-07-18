@@ -3,7 +3,7 @@
 A four-page HTML-only website built to practice **semantic HTML structure**
 across multiple pages. No CSS yet — styling is a deliberately separate
 project. This one is about getting header, nav, main, sections, sidebars,
-and footer right.
+and footer right. the Project URL "https://roadmap.sh/projects/basic-html-website"
 
 ## Goals
 
