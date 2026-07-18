@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: core tags ===== -->
+    <title>Contact — Mahmoud</title>
+    <meta name="description"
+        content="Get in touch with Mahmoud — Cairo-based engineer transitioning into web development.">
+    <meta name="author" content="Mahmoud">
+
+
+    <!-- ===== SEO: Open Graph ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — Mahmoud">
+    <meta property="og:description"
+        content="Get in touch with Mahmoud — Cairo-based engineer transitioning into web development.">
+   
+</head>
+
+<body>
+
+    <!-- HEADER: identical block to the other pages -->
+    <header class="site-header">
+        <div class="branding">
+            <p class="logo"><strong>Mahmoud</strong></p>
+        </div>
+        <nav aria-label="Primary" class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <p>Feel free to reach out — whether it's about a project, a freelance gig, or just to say hi.</p>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Send a Message</h2>
+
+            <!--
+        No backend yet — this form has nowhere to submit to.
+        A service like Formspree, or your own backend, would handle
+        the "action" URL once this goes live. Structure is correct
+        and ready for that either way.
+      -->
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!--
+      <address> is the semantically correct element for contact info
+      belonging to the page's author — not just physical mailing addresses.
+    -->
+        <section aria-labelledby="details-heading">
+            <h2 id="details-heading">Contact Details</h2>
+            <address class="contact-details">
+                <p>Cairo, Egypt</p>
+                <p>Email: <a href="mailto:[email protected]">[email protected]</a></p>
+                <p>
+                    <a href="https://github.com/Mahmoud-Araby-Elsayed">GitHub</a> ·
+                    <a href="https://www.linkedin.com/in/mahmoud-araby-elsayed">LinkedIn</a>
+                </p>
+            </address>
+        </section>
+    </main>
+
+    <!-- FOOTER: identical block to the other pages -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Mahmoud. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

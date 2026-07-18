@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: core tags ===== -->
+    <title>Articles — Mahmoud</title>
+    <meta name="description"
+        content="Notes and write-ups from Mahmoud's web development learning journey — HTML, CSS, career strategy, and freelancing.">
+    <meta name="author" content="Mahmoud">
+
+
+    <!-- ===== SEO: Open Graph ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Articles — Mahmoud">
+    <meta property="og:description" content="Notes and write-ups from Mahmoud's web development learning journey.">
+    
+</head>
+
+<body>
+
+    <!-- HEADER: identical block to index.html / projects.html -->
+    <header class="site-header">
+        <div class="branding">
+            <p class="logo"><strong>Mahmoud</strong></p>
+        </div>
+        <nav aria-label="Primary" class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html" aria-current="page">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+    PAGE-LAYOUT: wrapper div holding <main> and <aside> side by side later.
+    No semantic meaning of its own — just a future CSS hook (flex/grid).
+  -->
+    <div class="page-layout">
+
+        <main>
+            <h1>Articles</h1>
+            <p>Notes from the learning process — what I'm picking up as I go.</p>
+
+            <article>
+                <h2><a href="#">HTML5 Semantic Elements: A Practical Guide</a></h2>
+                <p class="meta"><time datetime="2026-05-04">May 4, 2026</time> · HTML</p>
+                <p>Working through header, nav, main, section, article, aside, and footer — and the rules for when each
+                    one actually applies.</p>
+            </article>
+
+            <article>
+                <h2><a href="#">Raster vs. Vector: Choosing the Right Image Format</a></h2>
+                <p class="meta"><time datetime="2026-05-18">May 18, 2026</time> · CSS</p>
+                <p>A breakdown of image formats and licensing considerations before dropping any image into a real
+                    project.</p>
+            </article>
+
+            <article>
+                <h2><a href="#">CSS Background Images: Best Practices</a></h2>
+                <p class="meta"><time datetime="2026-05-25">May 25, 2026</time> · CSS</p>
+                <p>Notes on background-image sizing, positioning, and fallback strategy — saved for when styling starts.
+                </p>
+            </article>
+
+            <article>
+                <h2><a href="#">Breaking Into Web Development in 2026</a></h2>
+                <p class="meta"><time datetime="2026-06-10">June 10, 2026</time> · Career</p>
+                <p>What the junior developer market actually looks like right now, and where to focus first.</p>
+            </article>
+
+            <article>
+                <h2><a href="#">Freelance Platforms for New Developers</a></h2>
+                <p class="meta"><time datetime="2026-06-22">June 22, 2026</time> · Freelance</p>
+                <p>A look at Upwork, Mostaql, and Khamsat as entry points for landing early freelance work.</p>
+            </article>
+        </main>
+
+        <!--
+      ASIDE: genuinely secondary content, related to the main content but not
+      required to understand it. aria-label used since there's no single
+      heading covering both sections inside it.
+    -->
+        <aside class="sidebar" aria-label="Sidebar">
+
+            <section aria-labelledby="categories-heading">
+                <h2 id="categories-heading">Categories</h2>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Freelance</a></li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="learning-heading">
+                <h2 id="learning-heading">Currently Learning</h2>
+                <p>Working through a structured frontend roadmap — JavaScript fundamentals and CSS layout are next.</p>
+            </section>
+
+        </aside>
+
+    </div>
+
+    <!-- FOOTER: identical block to index.html / projects.html -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Mahmoud. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
